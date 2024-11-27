@@ -17,6 +17,7 @@ export default class ListagemClientes extends Listagem {
             console.log(`RG: ` + cliente.getRgs.getValor);
             console.log(`Telefone: (${cliente.getTelefones.getDdd})${cliente.getTelefones.getNumero}`);
             console.log(`Data de Cadastro: ` + cliente.getDataCadastro);
+            console.log(`Produtos consumidos: ` + cliente.getProdutosConsumidos);
             console.log(`--------------------------------------`);
         });
         console.log(`\n`);

@@ -1,3 +1,4 @@
+import associarClienteProduto from "../associacoes/associarClienteProduto";
 import CPF from "./cpf";
 import Produto from "./produto";
 import RG from "./rg";
@@ -47,7 +48,7 @@ export default class Cliente {
     }
 
     public get getProdutosConsumidos(): Array<Produto> {
-        return this.produtosConsumidos;
+        return associarClienteProduto.getProdutosConsumidos(this)
     }
 
     public get getServicosConsumidos(): Array<Servico> {
